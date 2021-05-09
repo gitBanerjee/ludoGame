@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="flex-container">
+    <div class="gContainer">
+    <div class="game">
+    <div class="house green">
+        <div class="box">
+            <div class="square square-one green"></div>
+            <div class="square square-two green"></div>
+            <div class="square square-three green"></div>
+            <div class="square square-four green"></div>
+        </div>
+    </div>
+
+    <div class="house yellow" style="right: 0">
+        <div class="box">
+            <div class="square square-one yellow"></div>
+            <div class="square square-two yellow"></div>
+            <div class="square square-three yellow"></div>
+            <div class="square square-four yellow"></div>
+        </div>
+    </div>
+
+    <div class="house red" style="bottom: 0">
+        <div class="box">
+          <img class="square square-four" style="z-index:1;" src="pawns/red-pawn.svg" />
+            <div class="square square-one red"></div>
+            <div class="square square-two red"></div>
+            <div class="square square-three red"></div>
+            <div class="square square-four red"></div>
+        </div>
+    </div>
+
+    <div class="house blue" style="bottom: 0;right: 0">
+        <div class="box">
+            <div class="square square-one blue"></div>
+            <img class="square square-four" style="z-index:1;" src="pawns/blue-pawn.svg" />
+            <div class="square square-two blue"></div>
+            <div class="square square-three blue"></div>
+            <div class="square square-four blue"></div>
+        </div>
+    </div>
+
+    <div class="home"></div>
+
+    <!-- Left Blue 3 -->
+    <div class="cells uv-52" style="bottom: 0 ;left: 40% ;"></div>
+    <div class="cells r-start uv-1" style="bottom: 6.66% ;left: 40% ;"></div>
+    <div class="cells uv-2" style="bottom: 13.32% ;left: 40% ;"></div>
+    <div class="cells uv-3" style="bottom: 19.98% ;left: 40% ;"></div>
+    <div class="cells uv-4" style="bottom: 26.64% ;left: 40% ;"></div>
+    <div class="cells uv-5" style="bottom: 33.3% ;left: 40% ;"></div>
+
+    <!-- Below Green 3 -->
+    <div class="cells uv-6" style="top: 53.32% ;left: 33.3% "></div>
+    <div class="cells uv-7" style="top: 53.32% ;left: 26.64% ;"></div>
+    <div class="cells uv-8" style="top: 53.32% ;left: 19.98% ;"></div>
+    <div class="cells safe uv-9" style="top: 53.32% ;left: 13.32% ;"></div>
+    <div class="cells uv-10" style="top: 53.32% ;left: 6.66% ;"></div>
+    <div class="cells uv-11" style="top: 53.32% ;left: 0 ;"></div>
+
+    <!-- Below Green 2 -->
+    <img class="cells" style="top: 46.66% ;left: 33.3% ;z-index:1;" src="pawns/blue-pawn.svg" />
+    <img class="cells" style="top: 46.66% ;left: 6.66% ;z-index:1;" src="pawns/yellow-pawn.svg" />
+    <img class="cells" style="top: 46.66% ;left: 13.32% ;z-index:1;" src="pawns/red-pawn.svg" />
+    <img class="cells" style="top: 46.66% ;left: 26.64% ;z-index:1;" src="pawns/green-pawn.svg" />
+    <div class="cells green" style="top: 46.66% ;left: 33.3% "></div>
+    <div class="cells green" style="top: 46.66% ;left: 26.64% ;"></div>
+    <div class="cells green" style="top: 46.66% ;left: 19.98% ;"></div>
+    <div class="cells green" style="top: 46.66% ;left: 13.32% ;"></div>
+    <div class="cells green" style="top: 46.66% ;left: 6.66% ;"></div>
+    <div class="cells uv-12" style="top: 46.66% ;left: 0 ;"></div>
+
+    <!-- Below Green 1 -->
+    <div class="cells uv-13" style="top: 40% ;"></div>
+    <div class="cells g-start uv-14" style="top: 40% ;left: 6.66% ;"></div>
+    <div class="cells uv-15" style="top: 40% ;left: 13.32% ;"></div>
+    <div class="cells uv-16" style="top: 40% ;left: 19.98% ;"></div>
+    <div class="cells uv-17" style="top: 40% ;left: 26.64% ;"></div>
+    <div class="cells uv-18" style="top: 40% ;left: 33.3% ;"></div>
+
+
+    <!-- Right Green 1 -->
+    <div class="cells uv-24" style="top: 0 ;left: 40% ;"></div>
+    <div class="cells uv-23" style="top: 6.66% ;left: 40% ;"></div>
+    <div class="cells safe uv-22" style="top: 13.32% ;left: 40% ;"></div>
+    <div class="cells uv-21" style="top: 19.98% ;left: 40% ;"></div>
+    <div class="cells uv-20" style="top: 26.64% ;left: 40% ;"></div>
+    <div class="cells uv-19" style="top: 33.3% ;left: 40% ;"></div>
+
+    <!-- Right Green 2 -->
+    <div class="cells uv-25" style="top: 0 ;left: 46.66% ;"></div>
+    <div class="cells yellow" style="top: 6.66% ;left: 46.66% ;"></div>
+    <div class="cells yellow" style="top: 13.32% ;left: 46.66% ;"></div>
+    <div class="cells yellow" style="top: 19.98% ;left: 46.66% ;"></div>
+    <div class="cells yellow" style="top: 26.64% ;left: 46.66% ;"></div>
+    <div class="cells yellow" style="top: 33.3% ;left: 46.66% ;"></div>
+
+    <!-- Right Green 3 -->
+    <div class="cells uv-26" style="top: 0 ;left: 53.32% ;"></div>
+    <div class="cells y-start uv-27" style="top: 6.66% ;left: 53.32% ;"></div>
+    <div class="cells uv-28" style="top: 13.32% ;left: 53.32% ;"></div>
+    <div class="cells uv-29" style="top: 19.98% ;left: 53.32% ;"></div>
+    <div class="cells uv-30" style="top: 26.64% ;left: 53.32% ;"></div>
+    <div class="cells uv-31" style="top: 33.3% ;left: 53.32% ;"></div>
+
+    <!-- Up Blue 3 -->
+    <div class="cells uv-32" style="top: 40% ;right: 33.3% "></div>
+    <div class="cells uv-33" style="top: 40% ;right: 26.64% ;"></div>
+    <div class="cells uv-34" style="top: 40% ;right: 19.98% ;"></div>
+    <div class="cells safe uv-35" style="top: 40% ;right: 13.32% ;"></div>
+    <div class="cells uv-36" style="top: 40% ;right: 6.66% ;"></div>
+    <div class="cells uv-37" style="top: 40% ;right: 0 ;"></div>
+
+    <!-- Up Blue 2 -->
+    <div class="cells blue" style="top: 46.66% ; right: 33.3% "></div>
+    <div class="cells blue" style="top: 46.66% ;right: 26.64% ;"></div>
+    <div class="cells blue" style="top: 46.66% ;right: 19.98% ;"></div>
+    <div class="cells blue" style="top: 46.66% ;right: 13.32% ;"></div>
+    <div class="cells blue" style="top: 46.66% ;right: 6.66% ;"></div>
+    <div class="cells uv-38" style="top: 46.66% ;right: 0 ;"></div>
+
+    <!-- Up Blue 1 -->
+    <div class="cells uv-44" style="top: 53.32% ;right: 33.3% "></div>
+    <div class="cells uv-43" style="top: 53.32% ;right: 26.64% ;"></div>
+    <div class="cells uv-42" style="top: 53.32% ;right: 19.98% ;"></div>
+    <div class="cells uv-41" style="top: 53.32% ;right: 13.32% ;"></div>
+    <div class="cells b-start uv-40" style="top: 53.32% ;right: 6.66% ;"></div>
+    <div class="cells uv-39" style="top: 53.32% ;right: 0 ;"></div>
+
+    <!-- Left Blue 1 -->
+    <div class="cells uv-50" style="bottom: 0 ;left: 53.32% ;"></div>
+    <div class="cells uv-49" style="bottom: 6.66% ;left: 53.32% ;"></div>
+    <div class="cells safe uv-48" style="bottom: 13.32% ;left: 53.32% ;"></div>
+    <div class="cells uv-47" style="bottom: 19.98% ;left: 53.32% ;"></div>
+    <div class="cells uv-46" style="bottom: 26.64% ;left: 53.32% ;"></div>
+    <div class="cells uv-45" style="bottom: 33.3% ;left: 53.32% ;"></div>
+
+    <!-- Left Blue 2 -->
+    <div class="cells uv-51" style="bottom: 0 ;left: 46.66% ;"></div>
+    <div class="cells red " style="bottom: 6.66% ;left: 46.66% ;"></div>
+    <div class="cells red" style="bottom: 13.32% ;left: 46.66% ;"></div>
+    <div class="cells red" style="bottom: 19.98% ;left: 46.66% ;"></div>
+    <div class="cells red" style="bottom: 26.64% ;left: 46.66% ;"></div>
+    <div class="cells red" style="bottom: 33.3% ;left: 46.66% ;"></div>
+  </div>
+</div>
+<!-- Dice -->
+<div class="gContainer">
+<section class="container">
+  <div id="cube">
+    <div class="front">
+      <span class="dot dot1"></span>
+    </div>
+    <div class="back">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+    </div>
+    <div class="right">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+      <span class="dot dot3"></span>
+    </div>
+    <div class="left">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+      <span class="dot dot3"></span>
+      <span class="dot dot4"></span>
+    </div>
+    <div class="top">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+      <span class="dot dot3"></span>
+      <span class="dot dot4"></span>
+      <span class="dot dot5"></span>
+    </div>
+    <div class="bottom">
+      <span class="dot dot1"></span>
+      <span class="dot dot2"></span>
+      <span class="dot dot3"></span>
+      <span class="dot dot4"></span>
+      <span class="dot dot5"></span>
+      <span class="dot dot6"></span>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
